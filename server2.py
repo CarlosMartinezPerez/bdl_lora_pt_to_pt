@@ -15,6 +15,13 @@ vermelho = Pin(13, Pin.OUT) #vermelho
 botao_a = Pin(5, Pin.IN, Pin.PULL_UP)
 botao_b = Pin(6, Pin.IN, Pin.PULL_UP)
 
+# ======== INÍCIO: mostra vivo no OLED ========
+oled.fill(0)
+oled.text("LORA SERVER", 10, 15)
+oled.text("AGUARDANDO...", 10, 35)
+oled.show()
+# =============================================
+
 # This is our callback function that runs when a message is received
 def on_recv(payload):
     print("From:", payload.header_from)

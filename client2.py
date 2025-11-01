@@ -30,5 +30,6 @@ def msg(text=''):
 # loop and send data
 while True:
     if botao_a.value() == 0:
+        print("foi!!!!")
         msg('5')
     

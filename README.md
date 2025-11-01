@@ -14,3 +14,13 @@ Os módulos principais são:
 | server.py   | Servidor que recebe mensagens e mostra no display OLED.                                                        |
 | server2.py  | Versão do servidor que também responde ao código ‘5’, alternando o LED vermelho.                               |
 | pinagem.txt | Tabela de conexão entre o módulo RFM95W e o Pico (BitDogLab v7).                                               |
+
+
+Interpretação da resposta do módulo RFM95W ao registrador de versão (0x42):
+
+
+|Resultado|Significado|
+|---------|-----------|
+|0x12|	rádio OK e reconhecido|
+|0x00 ou 0xFF|	rádio não respondendo (pinos errados / sem alimentação / CS errado)|
+|travou|	bug nos pinos SPI (não está liberando CS ou SPI errado)|
