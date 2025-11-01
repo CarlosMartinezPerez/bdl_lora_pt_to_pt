@@ -15,4 +15,4 @@ Adapter RFM95W - Bitdog IDC 2x7
 14 - SCK -> GP18  (SCK)
 
 
-X - not connected
+X = not connected
